@@ -1,0 +1,31 @@
+@use "../../../Css/vars.module.scss" as var;
+
+.footerSection {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: flex-end;
+  padding: {
+    top: 2.4rem;
+    bottom: 2.4rem;
+  }
+}
+
+.btnGuardar {
+  color: map-get(var.$greys, mouseOut-greyOnGreen-color);
+  background-color: map-get(var.$colors, mouseOut-green-color);
+}
+
+.btnCancelar {
+  color: map-get(var.$greys, mouseOut-greyOnRed-color);
+  background-color: map-get(var.$colors, mouseOut-red-color);
+}
+
+.btnCancelar:hover {
+  color: map-get(var.$greys, mouseHouver-greyOnRed-color);
+  background-color: map-get(var.$colors, mouseHouver-red-color);
+}
+
+.btnGuardar:hover {
+  color: map-get(var.$greys, mouseHouver-greyOnGreen-color);
+  background-color: map-get(var.$colors, mouseHouver-green-color);
+}

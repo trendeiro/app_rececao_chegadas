@@ -1,0 +1,22 @@
+$colors: (
+  primary-color: #f9b22e,
+  mouseOut-red-color: #ff8787,
+  mouseHouver-red-color: #f03e3e,
+  mouseOut-green-color: #69db7c,
+  mouseHouver-green-color: #37b24d,
+);
+
+$greys: (
+  baseGrey: #555,
+  titleGrey: #333,
+  mouseOut-greyOnRed-color: #3e3e3e /*(lightest grey allowed on #ff8787)*/,
+  mouseHouver-greyOnRed-color: #191919 /*(lightest grey allowed on #f03e3e)*/,
+  mouseOut-greyOnGreen-color: #444444 /*(lightest grey allowed on #69db7c)*/,
+  mouseHouver-greyOnGreen-color: #343434 /*(lightest grey allowed on #37b24d)*/,
+);
+
+$tints: (
+  whitish: #fef7ea,
+);
+
+$white: #fff;

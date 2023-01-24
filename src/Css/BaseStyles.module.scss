@@ -1,0 +1,7 @@
+@use "./vars.module.scss" as var;
+
+.titleBasicStyle {
+  font-weight: 700;
+  color: map-get(var.$greys, titleGrey);
+  letter-spacing: -0.5px;
+}

@@ -1,0 +1,10 @@
+@use "./vars.module.scss" as var;
+
+.container {
+  height: 100vh;
+  background-color: map-get($map: var.$colors, $key: primary-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
