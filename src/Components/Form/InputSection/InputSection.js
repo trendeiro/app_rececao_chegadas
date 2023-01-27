@@ -15,8 +15,6 @@ const InputSection = (props) => {
     }
   }, [sendForm, deliver, quantaty, type, design]);
 
-  console.log(sendForm);
-
   return (
     <section className="inputSection">
       {deliver}
