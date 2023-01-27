@@ -1,14 +1,28 @@
-import Input from "../../../UI/Input/Input";
+import { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { InputCreation } from "../JavaScript/InputFunc_aux";
 
-const InputSection = () => {
+const InputSection = (props) => {
+  const sendForm = useSelector((state) => state.form.form.sendForm);
+  const { deliver, quantaty, type, design } = InputCreation();
+
+  useEffect(() => {
+    if (sendForm) {
+      console.log(deliver.props.value);
+      console.log(quantaty.props.value);
+      console.log(type.props.value);
+      console.log(design.props.value);
+    }
+  }, [sendForm, deliver, quantaty, type, design]);
+
+  console.log(sendForm);
+
   return (
     <section className="inputSection">
-      <Input inputLable="Data dia" type={"date"} />
-      <Input inputLable="Entregador" type={"text"} />
-      <Input inputLable="Quantidade" type={"number"} />
-      <Input inputLable="Tipo" type={"text"} />
-      <Input inputLable="Designação" type={"text"} />
-      <Input inputLable="Hora" type={"time"} />
+      {deliver}
+      {quantaty}
+      {type}
+      {design}
     </section>
   );
 };
